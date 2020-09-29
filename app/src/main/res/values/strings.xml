@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Meu Bolso</string>
+    <string name="lbl_hit_salario">Digite aqui seu salário</string>
+    <string name="lbl_desp_fixa">Despesas fixas:</string>
+    <string name="lbl_desp_variaveis">Despesa variaveis:</string>
+    <string name="lbl_emergencia">Emergência:</string>
+    <string name="lbl_aposentadoria">Aposentadoria:</string>
+    <string name="lbl_lazer">Lazer:</string>
+    <string name="lbl_btn">vizualizar</string>
+</resources>

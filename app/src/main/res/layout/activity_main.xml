@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nome_APP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/carteira"
+        android:layout_below="@+id/nome_APP"
+        android:layout_width="117dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_action_cartera" />
+
+    <EditText
+        android:id="@+id/meu_salario"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/carteira"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_text"
+        android:gravity="center"
+        android:hint="@string/lbl_hit_salario"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/visualiza"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/meu_salario"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_btn"
+        android:text="@string/lbl_btn"
+        android:textColor="@color/text_btn"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/txDespesas"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/visualiza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Metas de despesas"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/colortext"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/fixa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txDespesas"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/lbl_desp_fixa"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/variaveis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fixa"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/lbl_desp_variaveis"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/emergencia"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/variaveis"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/lbl_emergencia"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/aposentadoria"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emergencia"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/lbl_aposentadoria"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/lazer"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aposentadoria"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/lbl_lazer"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/img_casa"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txDespesas"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="366dp"
+        android:src="@drawable/ic_action_home" />
+
+    <ImageView
+        android:id="@+id/img_despesas"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/img_casa"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="@+id/txDespesas"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="366dp"
+        android:src="@drawable/ic_action_variavel" />
+
+    <ImageView
+        android:id="@+id/img_emergencia"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/img_despesas"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="366dp"
+        android:src="@drawable/ic_action_emegerncia" />
+
+    <ImageView
+        android:id="@+id/img_aposentadoria"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/img_emergencia"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="366dp"
+        android:src="@drawable/ic_action_aposentadoria" />
+
+    <ImageView
+        android:id="@+id/img_lazer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/img_aposentadoria"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="366dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ic_action_lazer" />
+</RelativeLayout>
+
+
+
